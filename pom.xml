@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
-        <version>8</version>
+        <version>12</version>
         <relativePath />
     </parent>
 
@@ -29,7 +29,7 @@
     <!-- Properties -->
     <properties>
 
-        <version.arquillian_core>1.0.0.Final</version.arquillian_core>
+        <version.arquillian_core>1.1.2.Final</version.arquillian_core>
         <version.jersey>1.10</version.jersey>
         <version.jboss.javaee-6_api>1.0.0.Final</version.jboss.javaee-6_api>
 
