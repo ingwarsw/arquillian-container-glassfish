@@ -22,7 +22,12 @@ package org.jboss.arquillian.container.glassfish.embedded_3_1.app;
  * @author <a href="mailto:aslak@redhat.com">Aslak Knutsen</a>
  * @version $Revision: $
  */
-public interface NameProvider
+public class NameProviderNormalImpl implements NameProvider
 {
-   public String getName();
+    public static final String NAME = "Arquillian";
+   public String getName()
+   {
+      return NAME;
+   }
 }
+

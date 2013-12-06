@@ -31,6 +31,6 @@ public class LocalInterfaceEJBBean implements LocalInterfaceEJB
 {
    public String getName() 
    {
-      return new NameProvider().getName();
+      return new NameProviderNormalImpl().getName();
    }
 }

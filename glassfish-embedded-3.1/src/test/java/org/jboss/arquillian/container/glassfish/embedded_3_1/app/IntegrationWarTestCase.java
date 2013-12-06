@@ -40,10 +40,11 @@ public class IntegrationWarTestCase
    @Deployment
    public static WebArchive createDeployment() throws Exception 
    {
-      return ShrinkWrap.create(WebArchive.class)
+      return ShrinkWrap.create(WebArchive.class, "test.war")
                .addClasses(
                      NoInterfaceEJB.class,
-                     NameProvider.class)
+                     NameProvider.class,
+                     NameProviderNormalImpl.class)
                .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml");
       
    }

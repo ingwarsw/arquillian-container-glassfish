@@ -35,7 +35,8 @@ public class AsAdminCommandTestCase {
     public static WebArchive createDeployment() throws Exception {
         return ShrinkWrap.create(WebArchive.class).addClasses(
                 NoInterfaceEJB.class,
-                NameProvider.class).addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml");
+                NameProvider.class,
+                NameProviderNormalImpl.class).addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml");
 
     }
     @Resource(mappedName = "org.glassfish.embeddable.CommandRunner")

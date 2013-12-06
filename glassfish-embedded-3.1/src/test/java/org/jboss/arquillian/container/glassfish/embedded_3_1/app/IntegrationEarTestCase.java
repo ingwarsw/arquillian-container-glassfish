@@ -47,7 +47,8 @@ public class IntegrationEarTestCase
                         ShrinkWrap.create(JavaArchive.class)
                            .addClasses(
                                  NoInterfaceEJB.class,
-                                 NameProvider.class)
+                                 NameProvider.class,
+                                 NameProviderNormalImpl.class)
                            .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml"))
                   .addAsModule(
                         ShrinkWrap.create(WebArchive.class)
